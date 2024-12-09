@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content1 %}
+<div class="row my-5">
+    <div class="col-4 d-flex justify-content-center align-items-center">
+        <img 
+            src="{% static 'images/im_new.jpg' %}" 
+            alt="image" 
+            class="about_image img-fluid border border-3 border-white rounded"
+        >
+    </div>
+
+    <div class="col-7 text-left text-light">
+        <h2> System.out.print("Hello World");</h2>
+        <p class="fs-5">
+            I am Paul Patrick Balbalosa from STI COLLEGE STA. MARIA. My course is
+            Bachelor of Science in Information Technology. I am a 2nd-year student now.
+        </p>
+        <p class="fs-5">
+            As a student, I am always watching YouTube tutorials and self-studying to 
+            improve my programming skills. I am also learning other languages 
+            like Python, Java, CSS, and JavaScript. I have created two websites: 
+            a POS system and this Django portfolio.
+        </p>
+    </div>
+</div>
+
+<div class="row my-5">
+    <h2 class="text-center" style="color:#4fffb0">Education</h2>
+
+    <!-- Tertiary Education -->
+    <div class="col-md-12 my-3">
+        <div class="card bg-dark text-light border-success">
+            <div class="card-body">
+                <h5 class="card-title">Tertiary</h5>
+                <p class="card-text">
+                    <strong>STI College - Sta. Maria, Bulacan, Philippines</strong><br>
+                    Information Technology (2023 - Present)
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Secondary Education -->
+    <div class="col-md-12 my-3">
+        <div class="card bg-dark text-light border-warning">
+            <div class="card-body">
+                <h5 class="card-title">Secondary</h5>
+                <p class="card-text">
+                    <strong>Immaculate Conception Polytechnic, Bulacan, Philippines</strong><br>
+                    TVL – Home Economics (Hotel, Restaurant, Cruise, and Tourism Operation) (2021 – 2023)
+                </p>
+                <p class="card-text">
+                    <strong>Mystical Rose School Of Bulacan, Inc., Bulacan, Philippines</strong><br>
+                    (2017 – 2021)
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Elementary Education -->
+    <div class="col-md-12 my-3">
+        <div class="card bg-dark text-light border-info">
+            <div class="card-body">
+                <h5 class="card-title">Elementary</h5>
+                <p class="card-text">
+                    <strong>Mystical Rose School Of Bulacan, Inc., Bulacan, Philippines</strong><br>
+                    (2010 – 2017)
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row my-2">
+    <h2 class="text-center" style="color:#4fffb0"> My Tech Stack</h2>
+
+    <div class="d-flex justify-content-around align-items-center">
+      <img
+          src="{% static 'images/html.png' %}"
+          width="70"
+          height="70"
+          alt="HTML Logo"
+          class="img-fluid"
+      />
+
+      <img
+          src="{% static 'images/css.png' %}"
+          width="70"
+          height="70"
+          alt="CSS Logo"
+          class="img-fluid"
+      />
+
+      <img
+          src="{% static 'images/js.png' %}"
+          width="70"
+          height="70"
+          alt="JavaScript Logo"
+          class="img-fluid"
+      />
+
+      <img
+          src="{% static 'images/python.jpg' %}"
+          width="60"
+          height="60"
+          alt="Python Logo"
+          class="img-fluid"
+      />
+
+      <img
+          src="{% static 'images/react.png' %}"
+          width="60"
+          height="60"
+          alt="React Logo"
+          class="img-fluid"
+      />
+
+      <img
+          src="{% static 'images/download.png' %}"
+          width="70"
+          height="70"
+          alt="Django Logo"
+          class="img-fluid"
+      />
+  </div>
+
+</div>
+
+{% endblock content1 %}
