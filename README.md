@@ -1,9 +1,13 @@
 pip install virtualenv
 
-python -m venv name
+python -m venv env
 
-.\ name \Scripts\activate
+.\env\Scripts\activate
+
+if error = Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
 pip install Django
 
 py manage.py runserver
+
+
