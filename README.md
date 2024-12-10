@@ -4,7 +4,8 @@ python -m venv env
 
 .\env\Scripts\activate
 
-if error = Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+if error 
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
 pip install Django
 
