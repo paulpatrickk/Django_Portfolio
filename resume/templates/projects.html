@@ -4,12 +4,22 @@
 
 <div class="row my-2">
     {% for project in projects_show %}
-<div class="col-6">
-    <h4 class="text-light"> {{project.title}}   </h4>
-    <img src="{% static project.path %}" width="500" height="800" class="img-fluid">
-
-</div>
-{% endfor %}
+    <div class="col-6">
+        <h4 class="text-light"> {{ project.title }} </h4>
+        {% if project.path %}
+        <!-- Image with fixed width and height -->
+        <img src="{% static project.path %}" width="500" height="800" class="img-fluid">
+        {% elif project.code %}
+        <!-- Code block with matching width and height -->
+        <div class="code-container bg-light p-3 border rounded"
+             style="width: 500px; height: 800px; overflow-y: auto; overflow-x: auto;">
+            <pre style="margin: 0; white-space: pre-wrap; word-wrap: break-word; height: 100%; overflow: auto;">
+                <code>{{ project.code }}</code>
+            </pre>
+        </div>
+        {% endif %}
+    </div>
+    {% endfor %}
 </div>
 
 {% endblock content1 %}
